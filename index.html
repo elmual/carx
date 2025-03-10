@@ -20,16 +20,16 @@
       }
       .container {
         position: relative;
-        width: 280px;
-        height: 280px;
+        width: 500px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .cevir {
         position: absolute;
-        height: 60px;
-        width: 60px;
+        height: 120px;
+        width: 120px;
         background-color: yellow;
         border-radius: 50%;
         z-index: 10;
@@ -44,14 +44,15 @@
         cursor: pointer;
         user-select: none;
         margin-top: 15px;
+        font-size: 1.7em;
       }
 
       .cevir::before {
         content: "";
         position: absolute;
-        top: -28px;
-        width: 20px;
-        height: 30px;
+        top: -40px;
+        width: 35px;
+        height: 45px;
         background-color: yellow;
         clip-path: polygon(50% 0%, 15% 99%, 85% 99%);
       }
@@ -78,46 +79,69 @@
         justify-content: center;
         align-items: center;
         user-select: none;
-    }
-    .gift1{
+      }
+      .gift1 {
         background: #db7093;
         transform: rotate(45deg);
-    }
-    .gift2{
+      }
+      .gift2 {
         background: #20b2aa;
         transform: rotate(90deg);
-    }
-    .gift3{
+      }
+      .gift3 {
         background: #d63e92;
         transform: rotate(135deg);
-    }
-    .gift4{
+      }
+      .gift4 {
         background: #daa520;
         transform: rotate(180deg);
-    }
-    .gift5{
+      }
+      .gift5 {
         background: #ff340f;
         transform: rotate(225deg);
-    }
-    .gift6{
+      }
+      .gift6 {
         background: #ff7f50;
         transform: rotate(270deg);
-    }
-    .gift7{
+      }
+      .gift7 {
         background: #3cb371;
         transform: rotate(315deg);
-    }
-    .gift8{
+      }
+      .gift8 {
         background: #4169e1;
         transform: rotate(360deg);
-    }
-    span {
+      }
+      span {
         position: relative;
         transform: rotate(45deg);
-        font-size: 1.3em;
+        font-size: 2em;
         font-weight: 700;
         color: #fff;
         text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+      }
+      @media (max-width: 750px) {
+        .container {
+          width: 250px;
+          height: 250px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        span {
+        font-size: 1.2em;
+      }
+      .cevir {
+        height: 60px;
+        width: 60px;
+        font-size: 1em;
+      }
+      .cevir::before {
+
+        top: -20px;
+        width: 25px;
+        height: 35px;
+      }
       }
     </style>
   </head>
@@ -127,7 +151,7 @@
 
       <div class="carx">
         <div class="gift gift1">
-          <span>Qulaqcıq</span>
+          <span>Üzük</span>
         </div>
         <div class="gift gift2">
           <span>Flaşka</span>
@@ -148,7 +172,7 @@
           <span>Qələm</span>
         </div>
         <div class="gift gift8">
-          <span>Üzük</span>
+          <span>Qulaqcıq</span>
         </div>
       </div>
     </div>
